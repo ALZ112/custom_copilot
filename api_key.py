@@ -1,1 +1,1 @@
-GOOGLE_API_KEY = "AIzaSyDZuCzAYrwyxabBHi4hcCyevkcE1KcgDuw"
+GOOGLE_API_KEY = "" # add your api key here
