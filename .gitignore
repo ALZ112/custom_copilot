@@ -1,0 +1,3 @@
+venv/
+custom-copilot/node_modules/
+__pycache__/
