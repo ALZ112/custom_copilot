@@ -1,7 +1,6 @@
-s = input("Enter your Gemini API Key")
-GOOGLE_API_KEY = s
 import google.generativeai as genai
 import os
+from api_key import GOOGLE_API_KEY
 os.environ['GOOGLE_API_KEY'] = GOOGLE_API_KEY
 genai.configure(api_key = os.getenv('GOOGLE_API_KEY'))
 generation_config = {"temperature" : 0.9,"top_p" : 1,"top_k":1,"max_output_tokens" : 2048}
