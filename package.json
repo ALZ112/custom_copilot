@@ -1,0 +1,53 @@
+{
+  "name": "custom-copilot",
+  "displayName": "custom_copilot",
+  "description": "custom AI based code generator",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents":[  
+    "onCommand:extension.custom_copilot"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.custom_copilot",
+        "title": "Custom Copilot",
+        "category": "Editing"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "My Extension Settings",
+      "properties": {
+        "myExtension.apiKey": {
+          "type": "string",
+          "default": "your api key", 
+          "description": "The API key for My Extension."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.92.0",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.4.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5",
+    "vscode": "^1.50.0" 
+  },
+  "dependencies": {
+  }
+}
